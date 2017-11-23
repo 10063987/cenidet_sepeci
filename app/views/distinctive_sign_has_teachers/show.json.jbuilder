@@ -1,0 +1,1 @@
+json.partial! "distinctive_sign_has_teachers/distinctive_sign_has_teacher", distinctive_sign_has_teacher: @distinctive_sign_has_teacher

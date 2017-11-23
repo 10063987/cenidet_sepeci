@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Distinctive Signs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Legal concept</th>
+      <th>File number</th>
+      <th>Presentation date</th>
+      <th>Denomination title</th>
+      <th>Registration number</th>
+      <th>Evidence</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @distinctive_signs.each do |distinctive_sign| %>
+      <tr>
+        <td><%= distinctive_sign.legal_concept %></td>
+        <td><%= distinctive_sign.file_number %></td>
+        <td><%= distinctive_sign.presentation_date %></td>
+        <td><%= distinctive_sign.denomination_title %></td>
+        <td><%= distinctive_sign.registration_number %></td>
+        <td><%= distinctive_sign.evidence %></td>
+        <td><%= distinctive_sign.message %></td>
+        <td><%= link_to 'Show', distinctive_sign %></td>
+        <td><%= link_to 'Edit', edit_distinctive_sign_path(distinctive_sign) %></td>
+        <td><%= link_to 'Destroy', distinctive_sign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Distinctive Sign', new_distinctive_sign_path %>

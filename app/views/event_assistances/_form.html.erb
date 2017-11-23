@@ -1,0 +1,62 @@
+<%= form_with(model: event_assistance, local: true) do |form| %>
+  <% if event_assistance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event_assistance.errors.count, "error") %> prohibited this event_assistance from being saved:</h2>
+
+      <ul>
+      <% event_assistance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :event_assistance_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_location %>
+    <%= form.text_field :event_location, id: :event_assistance_event_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date, id: :event_assistance_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.datetime_select :end_date, id: :event_assistance_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_type %>
+    <%= form.text_field :course_type, id: :event_assistance_course_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :participation_type %>
+    <%= form.text_field :participation_type, id: :event_assistance_participation_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_type %>
+    <%= form.text_field :event_type, id: :event_assistance_event_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :event_assistance_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :event_assistance_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

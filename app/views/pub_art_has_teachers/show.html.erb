@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @pub_art_has_teacher.status %>
+</p>
+
+<p>
+  <strong>Pub art:</strong>
+  <%= @pub_art_has_teacher.pub_art %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @pub_art_has_teacher.teacher %>
+</p>
+
+<%= link_to 'Edit', edit_pub_art_has_teacher_path(@pub_art_has_teacher) %> |
+<%= link_to 'Back', pub_art_has_teachers_path %>

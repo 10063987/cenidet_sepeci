@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @course_has_teacher.status %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @course_has_teacher.course %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @course_has_teacher.teacher %>
+</p>
+
+<%= link_to 'Edit', edit_course_has_teacher_path(@course_has_teacher) %> |
+<%= link_to 'Back', course_has_teachers_path %>

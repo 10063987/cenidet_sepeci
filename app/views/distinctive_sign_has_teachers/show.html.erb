@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @distinctive_sign_has_teacher.status %>
+</p>
+
+<p>
+  <strong>Distinctive sign:</strong>
+  <%= @distinctive_sign_has_teacher.distinctive_sign %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @distinctive_sign_has_teacher.teacher %>
+</p>
+
+<%= link_to 'Edit', edit_distinctive_sign_has_teacher_path(@distinctive_sign_has_teacher) %> |
+<%= link_to 'Back', distinctive_sign_has_teachers_path %>

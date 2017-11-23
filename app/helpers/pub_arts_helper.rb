@@ -1,0 +1,2 @@
+module PubArtsHelper
+end

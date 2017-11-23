@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  institution_name: MyString
+  location: MyString
+  start_date: 2017-11-23 14:08:08
+  end_date: 2017-11-23 14:08:08
+  host_teacher: MyString
+  stay_type: MyString
+  evidence: MyString
+  message: one
+
+two:
+  institution_name: MyString
+  location: MyString
+  start_date: 2017-11-23 14:08:08
+  end_date: 2017-11-23 14:08:08
+  host_teacher: MyString
+  stay_type: MyString
+  evidence: MyString
+  message: two

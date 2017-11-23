@@ -1,8 +1,59 @@
 Rails.application.routes.draw do
+  resources :generation_has_teachers
+  resources :generation_has_students
+  resources :generations
+  resources :pub_chapter_has_teachers
+  resources :pub_chapter_has_students
+  resources :pub_chapters
+  resources :pub_art_has_teachers
+  resources :pub_art_has_students
+  resources :pub_arts
+  resources :pub_art_types
+  resources :tech_dev_has_students
+  resources :tech_devs
+  resources :tech_dev_types
+  resources :sw_dev_has_teachers
+  resources :sw_dev_has_students
+  resources :sw_devs
+  resources :sw_dev_types
+  resources :congress_memory_has_teachers
+  resources :congress_memory_has_students
+  resources :congress_memories
+  resources :stay_has_teachers
+  resources :stay_has_students
+  resources :stays
+  resources :event_assistance_has_teachers
+  resources :event_assistance_has_students
+  resources :event_assistances
+  resources :course_has_teachers
+  resources :course_has_students
+  resources :courses
+  resources :invention_has_teachers
+  resources :invention_has_students
+  resources :inventions
+  resources :distinctive_sign_has_teachers
+  resources :distinctive_sign_has_students
+  resources :distinctive_signs
+  resources :registries
+  resources :set_aside_classrooms
+  resources :classrooms
+  resources :tutorial_committees
+  resources :liberations
+  resources :theses
+  resources :student_has_semesters
+  resources :semesters
+  resources :messages
+  resources :students
+  resources :teachers
+  resources :teacher_types
+  resources :origins
+  resources :research_lines
+  resources :departments
+  resources :institutions
+  
   get 'home/index'
-
-  devise_for :users
-
   root 'home#index'
+  
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

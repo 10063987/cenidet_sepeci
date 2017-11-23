@@ -1,0 +1,32 @@
+<%= form_with(model: generation_has_student, local: true) do |form| %>
+  <% if generation_has_student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(generation_has_student.errors.count, "error") %> prohibited this generation_has_student from being saved:</h2>
+
+      <ul>
+      <% generation_has_student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :generation_has_student_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :generation_id %>
+    <%= form.text_field :generation_id, id: :generation_has_student_generation_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id, id: :generation_has_student_student_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @stay_has_teacher.status %>
+</p>
+
+<p>
+  <strong>Stay:</strong>
+  <%= @stay_has_teacher.stay %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @stay_has_teacher.teacher %>
+</p>
+
+<%= link_to 'Edit', edit_stay_has_teacher_path(@stay_has_teacher) %> |
+<%= link_to 'Back', stay_has_teachers_path %>

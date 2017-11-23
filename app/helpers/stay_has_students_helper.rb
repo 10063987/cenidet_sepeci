@@ -1,0 +1,2 @@
+module StayHasStudentsHelper
+end

@@ -1,0 +1,97 @@
+<%= form_with(model: pub_art, local: true) do |form| %>
+  <% if pub_art.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pub_art.errors.count, "error") %> prohibited this pub_art from being saved:</h2>
+
+      <ul>
+      <% pub_art.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :issn_printed %>
+    <%= form.text_field :issn_printed, id: :pub_art_issn_printed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issn_electronic %>
+    <%= form.text_field :issn_electronic, id: :pub_art_issn_electronic %>
+  </div>
+
+  <div class="field">
+    <%= form.label :magazine_name %>
+    <%= form.text_field :magazine_name, id: :pub_art_magazine_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :article_title %>
+    <%= form.text_field :article_title, id: :pub_art_article_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade, id: :pub_art_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :publication_date %>
+    <%= form.datetime_select :publication_date, id: :pub_art_publication_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :index %>
+    <%= form.text_field :index, id: :pub_art_index %>
+  </div>
+
+  <div class="field">
+    <%= form.label :magazine_number %>
+    <%= form.number_field :magazine_number, id: :pub_art_magazine_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :magazine_volume %>
+    <%= form.number_field :magazine_volume, id: :pub_art_magazine_volume %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.date_select :year, id: :pub_art_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_page %>
+    <%= form.number_field :start_page, id: :pub_art_start_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_page %>
+    <%= form.number_field :end_page, id: :pub_art_end_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pub_art_type_id %>
+    <%= form.text_field :pub_art_type_id, id: :pub_art_pub_art_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :pub_art_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acceptance_letter %>
+    <%= form.text_field :acceptance_letter, id: :pub_art_acceptance_letter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :pub_art_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

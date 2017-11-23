@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Memory title:</strong>
+  <%= @congress_memory.memory_title %>
+</p>
+
+<p>
+  <strong>Start page:</strong>
+  <%= @congress_memory.start_page %>
+</p>
+
+<p>
+  <strong>End page:</strong>
+  <%= @congress_memory.end_page %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @congress_memory.year %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @congress_memory.evidence %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @congress_memory.message %>
+</p>
+
+<%= link_to 'Edit', edit_congress_memory_path(@congress_memory) %> |
+<%= link_to 'Back', congress_memories_path %>

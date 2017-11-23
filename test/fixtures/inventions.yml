@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  legal_concept: MyString
+  file_number: 1
+  presentation_date: 2017-11-23 14:07:47
+  invetion_title: MyString
+  inventor: MyString
+  registration_number: 1
+  evidence: MyString
+  message: one
+
+two:
+  legal_concept: MyString
+  file_number: 1
+  presentation_date: 2017-11-23 14:07:47
+  invetion_title: MyString
+  inventor: MyString
+  registration_number: 1
+  evidence: MyString
+  message: two

@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Registration number:</strong>
+  <%= @registry.registration_number %>
+</p>
+
+<p>
+  <strong>Issue number:</strong>
+  <%= @registry.issue_number %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @registry.teacher %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @registry.city %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @registry.date %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @registry.reason %>
+</p>
+
+<p>
+  <strong>Gas:</strong>
+  <%= @registry.gas %>
+</p>
+
+<p>
+  <strong>Toll booth:</strong>
+  <%= @registry.toll_booth %>
+</p>
+
+<p>
+  <strong>Travel expenses:</strong>
+  <%= @registry.travel_expenses %>
+</p>
+
+<p>
+  <strong>Land passage:</strong>
+  <%= @registry.land_passage %>
+</p>
+
+<p>
+  <strong>Air ticket:</strong>
+  <%= @registry.air_ticket %>
+</p>
+
+<p>
+  <strong>Exit transportation:</strong>
+  <%= @registry.exit_transportation %>
+</p>
+
+<p>
+  <strong>Return transportation:</strong>
+  <%= @registry.return_transportation %>
+</p>
+
+<p>
+  <strong>Requisition number:</strong>
+  <%= @registry.requisition_number %>
+</p>
+
+<%= link_to 'Edit', edit_registry_path(@registry) %> |
+<%= link_to 'Back', registries_path %>

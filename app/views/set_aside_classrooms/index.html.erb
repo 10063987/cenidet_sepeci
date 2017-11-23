@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Set Aside Classrooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Classroom</th>
+      <th>Tutorial committee</th>
+      <th>Student</th>
+      <th>Teacher type</th>
+      <th>Period</th>
+      <th>Date</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @set_aside_classrooms.each do |set_aside_classroom| %>
+      <tr>
+        <td><%= set_aside_classroom.classroom %></td>
+        <td><%= set_aside_classroom.tutorial_committee %></td>
+        <td><%= set_aside_classroom.student %></td>
+        <td><%= set_aside_classroom.teacher_type %></td>
+        <td><%= set_aside_classroom.period %></td>
+        <td><%= set_aside_classroom.date %></td>
+        <td><%= set_aside_classroom.start_time %></td>
+        <td><%= set_aside_classroom.end_time %></td>
+        <td><%= link_to 'Show', set_aside_classroom %></td>
+        <td><%= link_to 'Edit', edit_set_aside_classroom_path(set_aside_classroom) %></td>
+        <td><%= link_to 'Destroy', set_aside_classroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Set Aside Classroom', new_set_aside_classroom_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dev name:</strong>
+  <%= @tech_dev.dev_name %>
+</p>
+
+<p>
+  <strong>Support document:</strong>
+  <%= @tech_dev.support_document %>
+</p>
+
+<p>
+  <strong>Objective:</strong>
+  <%= @tech_dev.objective %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @tech_dev.summary %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @tech_dev.evidence %>
+</p>
+
+<p>
+  <strong>Tech dev type:</strong>
+  <%= @tech_dev.tech_dev_type %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @tech_dev.message %>
+</p>
+
+<%= link_to 'Edit', edit_tech_dev_path(@tech_dev) %> |
+<%= link_to 'Back', tech_devs_path %>

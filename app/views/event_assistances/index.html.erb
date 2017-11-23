@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Event Assistances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Event location</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Course type</th>
+      <th>Participation type</th>
+      <th>Event type</th>
+      <th>Evidence</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @event_assistances.each do |event_assistance| %>
+      <tr>
+        <td><%= event_assistance.name %></td>
+        <td><%= event_assistance.event_location %></td>
+        <td><%= event_assistance.start_date %></td>
+        <td><%= event_assistance.end_date %></td>
+        <td><%= event_assistance.course_type %></td>
+        <td><%= event_assistance.participation_type %></td>
+        <td><%= event_assistance.event_type %></td>
+        <td><%= event_assistance.evidence %></td>
+        <td><%= event_assistance.message %></td>
+        <td><%= link_to 'Show', event_assistance %></td>
+        <td><%= link_to 'Edit', edit_event_assistance_path(event_assistance) %></td>
+        <td><%= link_to 'Destroy', event_assistance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event Assistance', new_event_assistance_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Congress Memory Has Students</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Congress memory</th>
+      <th>Student</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @congress_memory_has_students.each do |congress_memory_has_student| %>
+      <tr>
+        <td><%= congress_memory_has_student.status %></td>
+        <td><%= congress_memory_has_student.congress_memory %></td>
+        <td><%= congress_memory_has_student.student %></td>
+        <td><%= link_to 'Show', congress_memory_has_student %></td>
+        <td><%= link_to 'Edit', edit_congress_memory_has_student_path(congress_memory_has_student) %></td>
+        <td><%= link_to 'Destroy', congress_memory_has_student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Congress Memory Has Student', new_congress_memory_has_student_path %>

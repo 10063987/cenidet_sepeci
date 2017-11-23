@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Legal concept:</strong>
+  <%= @distinctive_sign.legal_concept %>
+</p>
+
+<p>
+  <strong>File number:</strong>
+  <%= @distinctive_sign.file_number %>
+</p>
+
+<p>
+  <strong>Presentation date:</strong>
+  <%= @distinctive_sign.presentation_date %>
+</p>
+
+<p>
+  <strong>Denomination title:</strong>
+  <%= @distinctive_sign.denomination_title %>
+</p>
+
+<p>
+  <strong>Registration number:</strong>
+  <%= @distinctive_sign.registration_number %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @distinctive_sign.evidence %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @distinctive_sign.message %>
+</p>
+
+<%= link_to 'Edit', edit_distinctive_sign_path(@distinctive_sign) %> |
+<%= link_to 'Back', distinctive_signs_path %>

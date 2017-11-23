@@ -1,0 +1,32 @@
+<%= form_with(model: tech_dev_has_student, local: true) do |form| %>
+  <% if tech_dev_has_student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tech_dev_has_student.errors.count, "error") %> prohibited this tech_dev_has_student from being saved:</h2>
+
+      <ul>
+      <% tech_dev_has_student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :tech_dev_has_student_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tech_dev_id %>
+    <%= form.text_field :tech_dev_id, id: :tech_dev_has_student_tech_dev_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id, id: :tech_dev_has_student_student_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

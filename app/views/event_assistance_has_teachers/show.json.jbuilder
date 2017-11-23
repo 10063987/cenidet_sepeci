@@ -1,0 +1,1 @@
+json.partial! "event_assistance_has_teachers/event_assistance_has_teacher", event_assistance_has_teacher: @event_assistance_has_teacher

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Classroom:</strong>
+  <%= @set_aside_classroom.classroom %>
+</p>
+
+<p>
+  <strong>Tutorial committee:</strong>
+  <%= @set_aside_classroom.tutorial_committee %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @set_aside_classroom.student %>
+</p>
+
+<p>
+  <strong>Teacher type:</strong>
+  <%= @set_aside_classroom.teacher_type %>
+</p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @set_aside_classroom.period %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @set_aside_classroom.date %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @set_aside_classroom.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @set_aside_classroom.end_time %>
+</p>
+
+<%= link_to 'Edit', edit_set_aside_classroom_path(@set_aside_classroom) %> |
+<%= link_to 'Back', set_aside_classrooms_path %>

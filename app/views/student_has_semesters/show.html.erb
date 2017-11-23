@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Concluido:</strong>
+  <%= @student_has_semester.concluido %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @student_has_semester.student %>
+</p>
+
+<p>
+  <strong>Semester:</strong>
+  <%= @student_has_semester.semester %>
+</p>
+
+<%= link_to 'Edit', edit_student_has_semester_path(@student_has_semester) %> |
+<%= link_to 'Back', student_has_semesters_path %>

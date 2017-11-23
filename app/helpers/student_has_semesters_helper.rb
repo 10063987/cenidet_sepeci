@@ -1,0 +1,2 @@
+module StudentHasSemestersHelper
+end

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Legal concept:</strong>
+  <%= @invention.legal_concept %>
+</p>
+
+<p>
+  <strong>File number:</strong>
+  <%= @invention.file_number %>
+</p>
+
+<p>
+  <strong>Presentation date:</strong>
+  <%= @invention.presentation_date %>
+</p>
+
+<p>
+  <strong>Invetion title:</strong>
+  <%= @invention.invetion_title %>
+</p>
+
+<p>
+  <strong>Inventor:</strong>
+  <%= @invention.inventor %>
+</p>
+
+<p>
+  <strong>Registration number:</strong>
+  <%= @invention.registration_number %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @invention.evidence %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @invention.message %>
+</p>
+
+<%= link_to 'Edit', edit_invention_path(@invention) %> |
+<%= link_to 'Back', inventions_path %>

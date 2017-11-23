@@ -1,0 +1,2 @@
+module PubChaptersHelper
+end

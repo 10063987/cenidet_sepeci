@@ -1,0 +1,67 @@
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :student_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :student_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mlast_name %>
+    <%= form.text_field :mlast_name, id: :student_mlast_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :student_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :student_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade, id: :student_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :admission_date %>
+    <%= form.datetime_select :admission_date, id: :student_admission_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exit_date %>
+    <%= form.datetime_select :exit_date, id: :student_exit_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :research_line_id %>
+    <%= form.text_field :research_line_id, id: :student_research_line_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :student_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module CongressMemoriesHelper
+end

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Invention Has Teachers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Invention</th>
+      <th>Teacher</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @invention_has_teachers.each do |invention_has_teacher| %>
+      <tr>
+        <td><%= invention_has_teacher.status %></td>
+        <td><%= invention_has_teacher.invention %></td>
+        <td><%= invention_has_teacher.teacher %></td>
+        <td><%= link_to 'Show', invention_has_teacher %></td>
+        <td><%= link_to 'Edit', edit_invention_has_teacher_path(invention_has_teacher) %></td>
+        <td><%= link_to 'Destroy', invention_has_teacher, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Invention Has Teacher', new_invention_has_teacher_path %>

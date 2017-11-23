@@ -1,0 +1,2 @@
+module CongressMemoryHasStudentsHelper
+end

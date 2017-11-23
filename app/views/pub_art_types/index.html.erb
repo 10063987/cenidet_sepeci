@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pub Art Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pub_art_types.each do |pub_art_type| %>
+      <tr>
+        <td><%= pub_art_type.type %></td>
+        <td><%= link_to 'Show', pub_art_type %></td>
+        <td><%= link_to 'Edit', edit_pub_art_type_path(pub_art_type) %></td>
+        <td><%= link_to 'Destroy', pub_art_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pub Art Type', new_pub_art_type_path %>

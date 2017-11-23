@@ -1,0 +1,2 @@
+module GenerationHasStudentsHelper
+end

@@ -1,0 +1,57 @@
+<%= form_with(model: invention, local: true) do |form| %>
+  <% if invention.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(invention.errors.count, "error") %> prohibited this invention from being saved:</h2>
+
+      <ul>
+      <% invention.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :legal_concept %>
+    <%= form.text_field :legal_concept, id: :invention_legal_concept %>
+  </div>
+
+  <div class="field">
+    <%= form.label :file_number %>
+    <%= form.number_field :file_number, id: :invention_file_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presentation_date %>
+    <%= form.datetime_select :presentation_date, id: :invention_presentation_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :invetion_title %>
+    <%= form.text_field :invetion_title, id: :invention_invetion_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inventor %>
+    <%= form.text_field :inventor, id: :invention_inventor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :registration_number %>
+    <%= form.number_field :registration_number, id: :invention_registration_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :invention_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :invention_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

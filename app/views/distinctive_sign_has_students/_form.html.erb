@@ -1,0 +1,32 @@
+<%= form_with(model: distinctive_sign_has_student, local: true) do |form| %>
+  <% if distinctive_sign_has_student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(distinctive_sign_has_student.errors.count, "error") %> prohibited this distinctive_sign_has_student from being saved:</h2>
+
+      <ul>
+      <% distinctive_sign_has_student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :distinctive_sign_has_student_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distinctive_sign_id %>
+    <%= form.text_field :distinctive_sign_id, id: :distinctive_sign_has_student_distinctive_sign_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id, id: :distinctive_sign_has_student_student_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

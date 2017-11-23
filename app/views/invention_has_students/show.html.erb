@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @invention_has_student.status %>
+</p>
+
+<p>
+  <strong>Invention:</strong>
+  <%= @invention_has_student.invention %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @invention_has_student.student %>
+</p>
+
+<%= link_to 'Edit', edit_invention_has_student_path(@invention_has_student) %> |
+<%= link_to 'Back', invention_has_students_path %>

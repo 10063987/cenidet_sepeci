@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Liberations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>Cvu</th>
+      <th>Encuesta</th>
+      <th>Student</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @liberations.each do |liberation| %>
+      <tr>
+        <td><%= liberation.photo %></td>
+        <td><%= liberation.cvu %></td>
+        <td><%= liberation.encuesta %></td>
+        <td><%= liberation.student %></td>
+        <td><%= link_to 'Show', liberation %></td>
+        <td><%= link_to 'Edit', edit_liberation_path(liberation) %></td>
+        <td><%= link_to 'Destroy', liberation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Liberation', new_liberation_path %>

@@ -1,0 +1,2 @@
+module DistinctiveSignHasTeachersHelper
+end

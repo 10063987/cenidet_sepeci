@@ -1,0 +1,87 @@
+<%= form_with(model: registry, local: true) do |form| %>
+  <% if registry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(registry.errors.count, "error") %> prohibited this registry from being saved:</h2>
+
+      <ul>
+      <% registry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :registration_number %>
+    <%= form.number_field :registration_number, id: :registry_registration_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issue_number %>
+    <%= form.number_field :issue_number, id: :registry_issue_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_id %>
+    <%= form.text_field :teacher_id, id: :registry_teacher_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :registry_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date, id: :registry_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reason %>
+    <%= form.text_field :reason, id: :registry_reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gas %>
+    <%= form.text_field :gas, id: :registry_gas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :toll_booth %>
+    <%= form.text_field :toll_booth, id: :registry_toll_booth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :travel_expenses %>
+    <%= form.text_field :travel_expenses, id: :registry_travel_expenses %>
+  </div>
+
+  <div class="field">
+    <%= form.label :land_passage %>
+    <%= form.text_field :land_passage, id: :registry_land_passage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :air_ticket %>
+    <%= form.text_field :air_ticket, id: :registry_air_ticket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exit_transportation %>
+    <%= form.text_field :exit_transportation, id: :registry_exit_transportation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :return_transportation %>
+    <%= form.text_field :return_transportation, id: :registry_return_transportation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :requisition_number %>
+    <%= form.text_field :requisition_number, id: :registry_requisition_number %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

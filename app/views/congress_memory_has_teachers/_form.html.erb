@@ -1,0 +1,32 @@
+<%= form_with(model: congress_memory_has_teacher, local: true) do |form| %>
+  <% if congress_memory_has_teacher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(congress_memory_has_teacher.errors.count, "error") %> prohibited this congress_memory_has_teacher from being saved:</h2>
+
+      <ul>
+      <% congress_memory_has_teacher.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :congress_memory_has_teacher_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :congress_memory_id %>
+    <%= form.text_field :congress_memory_id, id: :congress_memory_has_teacher_congress_memory_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_id %>
+    <%= form.text_field :teacher_id, id: :congress_memory_has_teacher_teacher_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

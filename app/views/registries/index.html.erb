@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registration number</th>
+      <th>Issue number</th>
+      <th>Teacher</th>
+      <th>City</th>
+      <th>Date</th>
+      <th>Reason</th>
+      <th>Gas</th>
+      <th>Toll booth</th>
+      <th>Travel expenses</th>
+      <th>Land passage</th>
+      <th>Air ticket</th>
+      <th>Exit transportation</th>
+      <th>Return transportation</th>
+      <th>Requisition number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registries.each do |registry| %>
+      <tr>
+        <td><%= registry.registration_number %></td>
+        <td><%= registry.issue_number %></td>
+        <td><%= registry.teacher %></td>
+        <td><%= registry.city %></td>
+        <td><%= registry.date %></td>
+        <td><%= registry.reason %></td>
+        <td><%= registry.gas %></td>
+        <td><%= registry.toll_booth %></td>
+        <td><%= registry.travel_expenses %></td>
+        <td><%= registry.land_passage %></td>
+        <td><%= registry.air_ticket %></td>
+        <td><%= registry.exit_transportation %></td>
+        <td><%= registry.return_transportation %></td>
+        <td><%= registry.requisition_number %></td>
+        <td><%= link_to 'Show', registry %></td>
+        <td><%= link_to 'Edit', edit_registry_path(registry) %></td>
+        <td><%= link_to 'Destroy', registry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registry', new_registry_path %>

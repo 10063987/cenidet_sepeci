@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @congress_memory_has_student.status %>
+</p>
+
+<p>
+  <strong>Congress memory:</strong>
+  <%= @congress_memory_has_student.congress_memory %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @congress_memory_has_student.student %>
+</p>
+
+<%= link_to 'Edit', edit_congress_memory_has_student_path(@congress_memory_has_student) %> |
+<%= link_to 'Back', congress_memory_has_students_path %>

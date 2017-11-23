@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @liberation.photo %>
+</p>
+
+<p>
+  <strong>Cvu:</strong>
+  <%= @liberation.cvu %>
+</p>
+
+<p>
+  <strong>Encuesta:</strong>
+  <%= @liberation.encuesta %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @liberation.student %>
+</p>
+
+<%= link_to 'Edit', edit_liberation_path(@liberation) %> |
+<%= link_to 'Back', liberations_path %>

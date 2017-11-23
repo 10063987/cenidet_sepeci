@@ -1,0 +1,2 @@
+module TechDevTypesHelper
+end

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event_assistance.name %>
+</p>
+
+<p>
+  <strong>Event location:</strong>
+  <%= @event_assistance.event_location %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @event_assistance.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @event_assistance.end_date %>
+</p>
+
+<p>
+  <strong>Course type:</strong>
+  <%= @event_assistance.course_type %>
+</p>
+
+<p>
+  <strong>Participation type:</strong>
+  <%= @event_assistance.participation_type %>
+</p>
+
+<p>
+  <strong>Event type:</strong>
+  <%= @event_assistance.event_type %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @event_assistance.evidence %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @event_assistance.message %>
+</p>
+
+<%= link_to 'Edit', edit_event_assistance_path(@event_assistance) %> |
+<%= link_to 'Back', event_assistances_path %>

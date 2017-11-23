@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sw_dev_title: MyString
+  copyright: MyString
+  beneficiary: MyString
+  objctive: MyString
+  evidence: MyString
+  sw_dev_type: one
+  message: one
+
+two:
+  sw_dev_title: MyString
+  copyright: MyString
+  beneficiary: MyString
+  objctive: MyString
+  evidence: MyString
+  sw_dev_type: two
+  message: two

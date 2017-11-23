@@ -1,0 +1,57 @@
+<%= form_with(model: stay, local: true) do |form| %>
+  <% if stay.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stay.errors.count, "error") %> prohibited this stay from being saved:</h2>
+
+      <ul>
+      <% stay.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :institution_name %>
+    <%= form.text_field :institution_name, id: :stay_institution_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, id: :stay_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date, id: :stay_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.datetime_select :end_date, id: :stay_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :host_teacher %>
+    <%= form.text_field :host_teacher, id: :stay_host_teacher %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stay_type %>
+    <%= form.text_field :stay_type, id: :stay_stay_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :stay_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :stay_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

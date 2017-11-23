@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Congress Memories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Memory title</th>
+      <th>Start page</th>
+      <th>End page</th>
+      <th>Year</th>
+      <th>Evidence</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @congress_memories.each do |congress_memory| %>
+      <tr>
+        <td><%= congress_memory.memory_title %></td>
+        <td><%= congress_memory.start_page %></td>
+        <td><%= congress_memory.end_page %></td>
+        <td><%= congress_memory.year %></td>
+        <td><%= congress_memory.evidence %></td>
+        <td><%= congress_memory.message %></td>
+        <td><%= link_to 'Show', congress_memory %></td>
+        <td><%= link_to 'Edit', edit_congress_memory_path(congress_memory) %></td>
+        <td><%= link_to 'Destroy', congress_memory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Congress Memory', new_congress_memory_path %>

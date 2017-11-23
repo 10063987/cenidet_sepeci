@@ -1,0 +1,47 @@
+<%= form_with(model: congress_memory, local: true) do |form| %>
+  <% if congress_memory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(congress_memory.errors.count, "error") %> prohibited this congress_memory from being saved:</h2>
+
+      <ul>
+      <% congress_memory.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :memory_title %>
+    <%= form.text_field :memory_title, id: :congress_memory_memory_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_page %>
+    <%= form.number_field :start_page, id: :congress_memory_start_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_page %>
+    <%= form.number_field :end_page, id: :congress_memory_end_page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.date_select :year, id: :congress_memory_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :congress_memory_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :congress_memory_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  event_assistance: one
+  teacher: one
+
+two:
+  status: MyString
+  event_assistance: two
+  teacher: two

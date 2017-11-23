@@ -1,0 +1,52 @@
+<%= form_with(model: distinctive_sign, local: true) do |form| %>
+  <% if distinctive_sign.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(distinctive_sign.errors.count, "error") %> prohibited this distinctive_sign from being saved:</h2>
+
+      <ul>
+      <% distinctive_sign.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :legal_concept %>
+    <%= form.text_field :legal_concept, id: :distinctive_sign_legal_concept %>
+  </div>
+
+  <div class="field">
+    <%= form.label :file_number %>
+    <%= form.number_field :file_number, id: :distinctive_sign_file_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presentation_date %>
+    <%= form.datetime_select :presentation_date, id: :distinctive_sign_presentation_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :denomination_title %>
+    <%= form.text_field :denomination_title, id: :distinctive_sign_denomination_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :registration_number %>
+    <%= form.number_field :registration_number, id: :distinctive_sign_registration_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :distinctive_sign_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :distinctive_sign_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

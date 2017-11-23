@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @thesis.title %>
+</p>
+
+<p>
+  <strong>Admission date:</strong>
+  <%= @thesis.admission_date %>
+</p>
+
+<p>
+  <strong>Exit date:</strong>
+  <%= @thesis.exit_date %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @thesis.student %>
+</p>
+
+<%= link_to 'Edit', edit_thesis_path(@thesis) %> |
+<%= link_to 'Back', theses_path %>

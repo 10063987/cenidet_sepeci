@@ -1,0 +1,32 @@
+<%= form_with(model: pub_chapter_has_teacher, local: true) do |form| %>
+  <% if pub_chapter_has_teacher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pub_chapter_has_teacher.errors.count, "error") %> prohibited this pub_chapter_has_teacher from being saved:</h2>
+
+      <ul>
+      <% pub_chapter_has_teacher.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :pub_chapter_has_teacher_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pub_chapter_id %>
+    <%= form.text_field :pub_chapter_id, id: :pub_chapter_has_teacher_pub_chapter_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_id %>
+    <%= form.text_field :teacher_id, id: :pub_chapter_has_teacher_teacher_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

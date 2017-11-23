@@ -1,0 +1,57 @@
+<%= form_with(model: set_aside_classroom, local: true) do |form| %>
+  <% if set_aside_classroom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(set_aside_classroom.errors.count, "error") %> prohibited this set_aside_classroom from being saved:</h2>
+
+      <ul>
+      <% set_aside_classroom.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :classroom_id %>
+    <%= form.text_field :classroom_id, id: :set_aside_classroom_classroom_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tutorial_committee_id %>
+    <%= form.text_field :tutorial_committee_id, id: :set_aside_classroom_tutorial_committee_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id, id: :set_aside_classroom_student_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_type_id %>
+    <%= form.text_field :teacher_type_id, id: :set_aside_classroom_teacher_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :period %>
+    <%= form.datetime_select :period, id: :set_aside_classroom_period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date, id: :set_aside_classroom_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_time %>
+    <%= form.datetime_select :start_time, id: :set_aside_classroom_start_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_time %>
+    <%= form.datetime_select :end_time, id: :set_aside_classroom_end_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

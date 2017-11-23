@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Generation Has Teachers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Generation</th>
+      <th>Teacher</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @generation_has_teachers.each do |generation_has_teacher| %>
+      <tr>
+        <td><%= generation_has_teacher.status %></td>
+        <td><%= generation_has_teacher.generation %></td>
+        <td><%= generation_has_teacher.teacher %></td>
+        <td><%= link_to 'Show', generation_has_teacher %></td>
+        <td><%= link_to 'Edit', edit_generation_has_teacher_path(generation_has_teacher) %></td>
+        <td><%= link_to 'Destroy', generation_has_teacher, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Generation Has Teacher', new_generation_has_teacher_path %>

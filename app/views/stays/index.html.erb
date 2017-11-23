@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Stays</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Institution name</th>
+      <th>Location</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Host teacher</th>
+      <th>Stay type</th>
+      <th>Evidence</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stays.each do |stay| %>
+      <tr>
+        <td><%= stay.institution_name %></td>
+        <td><%= stay.location %></td>
+        <td><%= stay.start_date %></td>
+        <td><%= stay.end_date %></td>
+        <td><%= stay.host_teacher %></td>
+        <td><%= stay.stay_type %></td>
+        <td><%= stay.evidence %></td>
+        <td><%= stay.message %></td>
+        <td><%= link_to 'Show', stay %></td>
+        <td><%= link_to 'Edit', edit_stay_path(stay) %></td>
+        <td><%= link_to 'Destroy', stay, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stay', new_stay_path %>

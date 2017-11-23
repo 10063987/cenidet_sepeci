@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tech Devs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dev name</th>
+      <th>Support document</th>
+      <th>Objective</th>
+      <th>Summary</th>
+      <th>Evidence</th>
+      <th>Tech dev type</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tech_devs.each do |tech_dev| %>
+      <tr>
+        <td><%= tech_dev.dev_name %></td>
+        <td><%= tech_dev.support_document %></td>
+        <td><%= tech_dev.objective %></td>
+        <td><%= tech_dev.summary %></td>
+        <td><%= tech_dev.evidence %></td>
+        <td><%= tech_dev.tech_dev_type %></td>
+        <td><%= tech_dev.message %></td>
+        <td><%= link_to 'Show', tech_dev %></td>
+        <td><%= link_to 'Edit', edit_tech_dev_path(tech_dev) %></td>
+        <td><%= link_to 'Destroy', tech_dev, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tech Dev', new_tech_dev_path %>

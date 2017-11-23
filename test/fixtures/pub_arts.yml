@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  issn_printed: MyString
+  issn_electronic: MyString
+  magazine_name: MyString
+  article_title: MyString
+  grade: MyString
+  publication_date: 2017-11-23 14:08:40
+  index: MyString
+  magazine_number: 1
+  magazine_volume: 1
+  year: 2017-11-23
+  start_page: 1
+  end_page: 1
+  pub_art_type: one
+  evidence: MyString
+  acceptance_letter: MyString
+  message: one
+
+two:
+  issn_printed: MyString
+  issn_electronic: MyString
+  magazine_name: MyString
+  article_title: MyString
+  grade: MyString
+  publication_date: 2017-11-23 14:08:40
+  index: MyString
+  magazine_number: 1
+  magazine_volume: 1
+  year: 2017-11-23
+  start_page: 1
+  end_page: 1
+  pub_art_type: two
+  evidence: MyString
+  acceptance_letter: MyString
+  message: two

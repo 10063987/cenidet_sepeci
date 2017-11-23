@@ -1,0 +1,52 @@
+<%= form_with(model: tech_dev, local: true) do |form| %>
+  <% if tech_dev.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tech_dev.errors.count, "error") %> prohibited this tech_dev from being saved:</h2>
+
+      <ul>
+      <% tech_dev.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :dev_name %>
+    <%= form.text_field :dev_name, id: :tech_dev_dev_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :support_document %>
+    <%= form.text_field :support_document, id: :tech_dev_support_document %>
+  </div>
+
+  <div class="field">
+    <%= form.label :objective %>
+    <%= form.text_field :objective, id: :tech_dev_objective %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary %>
+    <%= form.text_field :summary, id: :tech_dev_summary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :tech_dev_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tech_dev_type %>
+    <%= form.text_field :tech_dev_type, id: :tech_dev_tech_dev_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :tech_dev_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

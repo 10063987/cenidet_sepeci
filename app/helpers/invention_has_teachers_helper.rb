@@ -1,0 +1,2 @@
+module InventionHasTeachersHelper
+end

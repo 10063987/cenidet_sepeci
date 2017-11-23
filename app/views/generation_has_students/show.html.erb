@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @generation_has_student.status %>
+</p>
+
+<p>
+  <strong>Generation:</strong>
+  <%= @generation_has_student.generation %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @generation_has_student.student %>
+</p>
+
+<%= link_to 'Edit', edit_generation_has_student_path(@generation_has_student) %> |
+<%= link_to 'Back', generation_has_students_path %>

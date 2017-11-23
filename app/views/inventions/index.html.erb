@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Inventions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Legal concept</th>
+      <th>File number</th>
+      <th>Presentation date</th>
+      <th>Invetion title</th>
+      <th>Inventor</th>
+      <th>Registration number</th>
+      <th>Evidence</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inventions.each do |invention| %>
+      <tr>
+        <td><%= invention.legal_concept %></td>
+        <td><%= invention.file_number %></td>
+        <td><%= invention.presentation_date %></td>
+        <td><%= invention.invetion_title %></td>
+        <td><%= invention.inventor %></td>
+        <td><%= invention.registration_number %></td>
+        <td><%= invention.evidence %></td>
+        <td><%= invention.message %></td>
+        <td><%= link_to 'Show', invention %></td>
+        <td><%= link_to 'Edit', edit_invention_path(invention) %></td>
+        <td><%= link_to 'Destroy', invention, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Invention', new_invention_path %>

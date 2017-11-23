@@ -1,0 +1,2 @@
+module EventAssistancesHelper
+end

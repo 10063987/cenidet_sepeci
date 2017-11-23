@@ -1,0 +1,2 @@
+module CourseHasStudentsHelper
+end

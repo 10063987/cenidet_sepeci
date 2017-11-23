@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  invention: one
+  teacher: one
+
+two:
+  status: MyString
+  invention: two
+  teacher: two

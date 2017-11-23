@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tutorial Committees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Period</th>
+      <th>Teacher type</th>
+      <th>Student</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tutorial_committees.each do |tutorial_committee| %>
+      <tr>
+        <td><%= tutorial_committee.name %></td>
+        <td><%= tutorial_committee.period %></td>
+        <td><%= tutorial_committee.teacher_type %></td>
+        <td><%= tutorial_committee.student %></td>
+        <td><%= link_to 'Show', tutorial_committee %></td>
+        <td><%= link_to 'Edit', edit_tutorial_committee_path(tutorial_committee) %></td>
+        <td><%= link_to 'Destroy', tutorial_committee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tutorial Committee', new_tutorial_committee_path %>

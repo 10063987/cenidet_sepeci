@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  memory_title: MyString
+  start_page: 1
+  end_page: 1
+  year: 2017-11-23
+  evidence: MyString
+  message: one
+
+two:
+  memory_title: MyString
+  start_page: 1
+  end_page: 1
+  year: 2017-11-23
+  evidence: MyString
+  message: two

@@ -1,0 +1,62 @@
+<%= form_with(model: teacher, local: true) do |form| %>
+  <% if teacher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(teacher.errors.count, "error") %> prohibited this teacher from being saved:</h2>
+
+      <ul>
+      <% teacher.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :teacher_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rfc %>
+    <%= form.text_field :rfc, id: :teacher_rfc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :teacher_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :teacher_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade, id: :teacher_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :research_line_id %>
+    <%= form.text_field :research_line_id, id: :teacher_research_line_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :origin_id %>
+    <%= form.text_field :origin_id, id: :teacher_origin_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_type_id %>
+    <%= form.text_field :teacher_type_id, id: :teacher_teacher_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :teacher_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

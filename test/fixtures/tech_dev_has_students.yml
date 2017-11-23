@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  tech_dev: one
+  student: one
+
+two:
+  status: MyString
+  tech_dev: two
+  student: two

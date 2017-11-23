@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @pub_chapter.isbn %>
+</p>
+
+<p>
+  <strong>Chapter title:</strong>
+  <%= @pub_chapter.chapter_title %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @pub_chapter.publisher %>
+</p>
+
+<p>
+  <strong>Edition number:</strong>
+  <%= @pub_chapter.edition_number %>
+</p>
+
+<p>
+  <strong>Chapter number:</strong>
+  <%= @pub_chapter.chapter_number %>
+</p>
+
+<p>
+  <strong>Start page:</strong>
+  <%= @pub_chapter.start_page %>
+</p>
+
+<p>
+  <strong>End page:</strong>
+  <%= @pub_chapter.end_page %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @pub_chapter.evidence %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @pub_chapter.message %>
+</p>
+
+<%= link_to 'Edit', edit_pub_chapter_path(@pub_chapter) %> |
+<%= link_to 'Back', pub_chapters_path %>

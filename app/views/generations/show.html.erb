@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start year:</strong>
+  <%= @generation.start_year %>
+</p>
+
+<p>
+  <strong>End year:</strong>
+  <%= @generation.end_year %>
+</p>
+
+<p>
+  <strong>Start period:</strong>
+  <%= @generation.start_period %>
+</p>
+
+<p>
+  <strong>End period:</strong>
+  <%= @generation.end_period %>
+</p>
+
+<%= link_to 'Edit', edit_generation_path(@generation) %> |
+<%= link_to 'Back', generations_path %>

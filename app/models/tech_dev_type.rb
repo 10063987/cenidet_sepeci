@@ -1,0 +1,2 @@
+class TechDevType < ApplicationRecord
+end

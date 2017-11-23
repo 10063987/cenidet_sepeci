@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  distinctive_sign: one
+  teacher: one
+
+two:
+  status: MyString
+  distinctive_sign: two
+  teacher: two

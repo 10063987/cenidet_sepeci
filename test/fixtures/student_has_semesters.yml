@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  concluido: MyString
+  student: one
+  semester: one
+
+two:
+  concluido: MyString
+  student: two
+  semester: two

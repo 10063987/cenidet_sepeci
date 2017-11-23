@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sw Devs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sw dev title</th>
+      <th>Copyright</th>
+      <th>Beneficiary</th>
+      <th>Objctive</th>
+      <th>Evidence</th>
+      <th>Sw dev type</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sw_devs.each do |sw_dev| %>
+      <tr>
+        <td><%= sw_dev.sw_dev_title %></td>
+        <td><%= sw_dev.copyright %></td>
+        <td><%= sw_dev.beneficiary %></td>
+        <td><%= sw_dev.objctive %></td>
+        <td><%= sw_dev.evidence %></td>
+        <td><%= sw_dev.sw_dev_type %></td>
+        <td><%= sw_dev.message %></td>
+        <td><%= link_to 'Show', sw_dev %></td>
+        <td><%= link_to 'Edit', edit_sw_dev_path(sw_dev) %></td>
+        <td><%= link_to 'Destroy', sw_dev, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sw Dev', new_sw_dev_path %>

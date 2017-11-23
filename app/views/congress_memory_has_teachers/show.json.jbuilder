@@ -1,0 +1,1 @@
+json.partial! "congress_memory_has_teachers/congress_memory_has_teacher", congress_memory_has_teacher: @congress_memory_has_teacher

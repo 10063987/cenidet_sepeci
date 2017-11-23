@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sw dev title:</strong>
+  <%= @sw_dev.sw_dev_title %>
+</p>
+
+<p>
+  <strong>Copyright:</strong>
+  <%= @sw_dev.copyright %>
+</p>
+
+<p>
+  <strong>Beneficiary:</strong>
+  <%= @sw_dev.beneficiary %>
+</p>
+
+<p>
+  <strong>Objctive:</strong>
+  <%= @sw_dev.objctive %>
+</p>
+
+<p>
+  <strong>Evidence:</strong>
+  <%= @sw_dev.evidence %>
+</p>
+
+<p>
+  <strong>Sw dev type:</strong>
+  <%= @sw_dev.sw_dev_type %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @sw_dev.message %>
+</p>
+
+<%= link_to 'Edit', edit_sw_dev_path(@sw_dev) %> |
+<%= link_to 'Back', sw_devs_path %>

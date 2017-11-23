@@ -1,0 +1,2 @@
+class PubArtType < ApplicationRecord
+end

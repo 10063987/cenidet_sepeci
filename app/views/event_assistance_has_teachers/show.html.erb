@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @event_assistance_has_teacher.status %>
+</p>
+
+<p>
+  <strong>Event assistance:</strong>
+  <%= @event_assistance_has_teacher.event_assistance %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @event_assistance_has_teacher.teacher %>
+</p>
+
+<%= link_to 'Edit', edit_event_assistance_has_teacher_path(@event_assistance_has_teacher) %> |
+<%= link_to 'Back', event_assistance_has_teachers_path %>

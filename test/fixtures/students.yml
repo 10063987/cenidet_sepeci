@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  last_name: MyString
+  mlast_name: MyString
+  phone: MyString
+  email: MyString
+  grade: MyString
+  admission_date: 2017-11-23 14:07:18
+  exit_date: 2017-11-23 14:07:18
+  research_line: one
+  user: one
+
+two:
+  name: MyString
+  last_name: MyString
+  mlast_name: MyString
+  phone: MyString
+  email: MyString
+  grade: MyString
+  admission_date: 2017-11-23 14:07:18
+  exit_date: 2017-11-23 14:07:18
+  research_line: two
+  user: two

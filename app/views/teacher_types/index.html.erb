@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Teacher Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teacher_types.each do |teacher_type| %>
+      <tr>
+        <td><%= teacher_type.type %></td>
+        <td><%= link_to 'Show', teacher_type %></td>
+        <td><%= link_to 'Edit', edit_teacher_type_path(teacher_type) %></td>
+        <td><%= link_to 'Destroy', teacher_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teacher Type', new_teacher_type_path %>

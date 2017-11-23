@@ -1,0 +1,37 @@
+<%= form_with(model: generation, local: true) do |form| %>
+  <% if generation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(generation.errors.count, "error") %> prohibited this generation from being saved:</h2>
+
+      <ul>
+      <% generation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :start_year %>
+    <%= form.date_select :start_year, id: :generation_start_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_year %>
+    <%= form.date_select :end_year, id: :generation_end_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_period %>
+    <%= form.text_field :start_period, id: :generation_start_period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_period %>
+    <%= form.text_field :end_period, id: :generation_end_period %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

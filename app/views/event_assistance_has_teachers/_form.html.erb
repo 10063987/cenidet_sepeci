@@ -1,0 +1,32 @@
+<%= form_with(model: event_assistance_has_teacher, local: true) do |form| %>
+  <% if event_assistance_has_teacher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event_assistance_has_teacher.errors.count, "error") %> prohibited this event_assistance_has_teacher from being saved:</h2>
+
+      <ul>
+      <% event_assistance_has_teacher.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :event_assistance_has_teacher_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_assistance_id %>
+    <%= form.text_field :event_assistance_id, id: :event_assistance_has_teacher_event_assistance_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_id %>
+    <%= form.text_field :teacher_id, id: :event_assistance_has_teacher_teacher_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

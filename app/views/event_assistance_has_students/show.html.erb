@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @event_assistance_has_student.status %>
+</p>
+
+<p>
+  <strong>Event assistance:</strong>
+  <%= @event_assistance_has_student.event_assistance %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @event_assistance_has_student.student %>
+</p>
+
+<%= link_to 'Edit', edit_event_assistance_has_student_path(@event_assistance_has_student) %> |
+<%= link_to 'Back', event_assistance_has_students_path %>

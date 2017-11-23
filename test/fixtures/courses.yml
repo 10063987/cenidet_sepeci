@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course_name: MyString
+  institution_name: MyString
+  course_location: MyString
+  start_date: 2017-11-23 14:07:54
+  end_date: 2017-11-23 14:07:54
+  course_type: MyString
+  evidence: MyString
+  message: one
+
+two:
+  course_name: MyString
+  institution_name: MyString
+  course_location: MyString
+  start_date: 2017-11-23 14:07:54
+  end_date: 2017-11-23 14:07:54
+  course_type: MyString
+  evidence: MyString
+  message: two

@@ -1,0 +1,52 @@
+<%= form_with(model: sw_dev, local: true) do |form| %>
+  <% if sw_dev.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sw_dev.errors.count, "error") %> prohibited this sw_dev from being saved:</h2>
+
+      <ul>
+      <% sw_dev.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sw_dev_title %>
+    <%= form.text_field :sw_dev_title, id: :sw_dev_sw_dev_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :copyright %>
+    <%= form.text_field :copyright, id: :sw_dev_copyright %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beneficiary %>
+    <%= form.text_field :beneficiary, id: :sw_dev_beneficiary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :objctive %>
+    <%= form.text_field :objctive, id: :sw_dev_objctive %>
+  </div>
+
+  <div class="field">
+    <%= form.label :evidence %>
+    <%= form.text_field :evidence, id: :sw_dev_evidence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sw_dev_type_id %>
+    <%= form.text_field :sw_dev_type_id, id: :sw_dev_sw_dev_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message_id %>
+    <%= form.text_field :message_id, id: :sw_dev_message_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
